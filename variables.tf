@@ -1,5 +1,6 @@
 variable "oracle_api_key_fingerprint" {}
 variable "oracle_api_private_key_path" {}
+variable "oracle_api_private_key_password" {}
 
 variable "ssh_public_key" {}
 variable "ssh_private_key_path" {}
@@ -28,12 +29,12 @@ variable "instance_shape" {
   # Flex-Tier (Free) is VM.Standard.A1.Flex
   default = "VM.Standard.E2.1.Micro"
 }
-#variable "instance_shape_config_memory_in_gbs" {
-#  default = "24"
-#}
-#variable "instance_shape_config_ocpus" {
-#  default = "4"
-#}
+variable "instance_shape_config_memory_in_gbs" {
+  default = "24"
+}
+variable "instance_shape_config_ocpus" {
+  default = "4"
+}
 
 
 variable "instance_image_ocid" {
