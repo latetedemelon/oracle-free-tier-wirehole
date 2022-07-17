@@ -1,5 +1,6 @@
 variable "oracle_api_key_fingerprint" {}
 variable "oracle_api_private_key_path" {}
+variable "oracle_api_private_key_password" {}
 
 variable "ssh_public_key" {}
 variable "ssh_private_key_path" {}
